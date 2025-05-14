@@ -1,0 +1,64 @@
+body {
+  font-family: 'Comic Sans MS', cursive;
+  text-align: center;
+  background-color: white;
+  margin: 0;
+  padding: 20px;
+  transition: background-color 0.5s ease-in-out;
+}
+
+h1 {
+  color: #ff4081;
+  animation: bounce 2s infinite;
+}
+
+.figures {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.figure {
+  font-size: 80px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.figure:hover {
+  animation: dance 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+@keyframes dance {
+  0%   { transform: rotate(0deg) scale(1); }
+  25%  { transform: rotate(-10deg) scale(1.1); }
+  50%  { transform: rotate(10deg) scale(1.2); }
+  75%  { transform: rotate(-10deg) scale(1.1); }
+  100% { transform: rotate(0deg) scale(1); }
+}
+
+.controls {
+  margin-top: 50px;
+  font-size: 18px;
+}
+
+button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #ff79a6;
+}
